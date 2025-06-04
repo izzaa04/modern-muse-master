@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { Download } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
@@ -50,13 +51,13 @@ Creative University (2019)
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <nav className="fixed top-0 w-full z-50 glass-card border-0 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link 
             to="/" 
-            className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors"
+            className="text-3xl font-bold gradient-text hover:scale-110 transition-transform duration-300"
           >
             AD
           </Link>
@@ -68,38 +69,40 @@ Creative University (2019)
                 key={item.path}
                 to={item.path}
                 className={cn(
-                  "text-sm font-medium transition-colors relative",
+                  "text-sm font-medium transition-all duration-300 relative group",
                   location.pathname === item.path
-                    ? "text-gray-900"
-                    : "text-gray-600 hover:text-gray-900"
+                    ? "text-pink-400"
+                    : "text-gray-300 hover:text-white"
                 )}
               >
                 {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-blue-400 transition-all duration-300 group-hover:w-full"></span>
                 {location.pathname === item.path && (
-                  <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gray-900" />
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-pink-400 to-blue-400"></span>
                 )}
               </Link>
             ))}
             <button
               onClick={handleDownloadResume}
-              className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+              className="glow-button text-white flex items-center gap-2"
             >
-              Download Resume
+              <Download size={16} />
+              Resume
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-white"
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
               <div className={cn(
-                "w-6 h-0.5 bg-gray-900 transition-all",
+                "w-6 h-0.5 bg-gradient-to-r from-pink-400 to-blue-400 transition-all",
                 isMenuOpen ? "rotate-45 translate-y-0.5" : ""
               )} />
               <div className={cn(
-                "w-6 h-0.5 bg-gray-900 mt-1 transition-all",
+                "w-6 h-0.5 bg-gradient-to-r from-pink-400 to-blue-400 mt-1 transition-all",
                 isMenuOpen ? "-rotate-45 -translate-y-0.5" : ""
               )} />
             </div>
@@ -108,7 +111,7 @@ Creative University (2019)
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-4 border-t border-white/10">
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <Link
@@ -118,8 +121,8 @@ Creative University (2019)
                   className={cn(
                     "text-sm font-medium transition-colors",
                     location.pathname === item.path
-                      ? "text-gray-900"
-                      : "text-gray-600"
+                      ? "text-pink-400"
+                      : "text-gray-300"
                   )}
                 >
                   {item.label}
@@ -130,9 +133,10 @@ Creative University (2019)
                   handleDownloadResume();
                   setIsMenuOpen(false);
                 }}
-                className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors text-left"
+                className="glow-button text-white flex items-center gap-2 w-fit"
               >
-                Download Resume
+                <Download size={16} />
+                Resume
               </button>
             </div>
           </div>
