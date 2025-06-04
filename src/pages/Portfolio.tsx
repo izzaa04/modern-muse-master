@@ -136,22 +136,6 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-20">
-          <div className="glass-card p-8 max-w-2xl mx-auto border border-white/10">
-            <h2 className="text-3xl font-bold gradient-text mb-4">
-              Ready to Create Something Magical?
-            </h2>
-            <p className="text-gray-300 mb-6">
-              Let's collaborate and bring your vision to life in the digital cosmos.
-            </p>
-            <button className="glow-button flex items-center gap-3 mx-auto">
-              <Sparkles className="w-5 h-5" />
-              Start a Project
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );

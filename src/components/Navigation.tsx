@@ -10,13 +10,10 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/portfolio", label: "Portfolio" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "/portfolio", label: "Portfolio" }
   ];
 
   const handleDownloadResume = () => {
-    // Create a simple text resume for demo purposes
     const resumeContent = `
 ALEX DESIGNER
 Digital Designer & Developer
