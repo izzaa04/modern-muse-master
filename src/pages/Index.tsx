@@ -1,36 +1,41 @@
 
 import { Link } from "react-router-dom";
-import { Download, Sparkles } from "lucide-react";
+import { Download, Youtube } from "lucide-react";
 
 const Index = () => {
   const handleDownloadResume = () => {
     const resumeContent = `
-ALEX DESIGNER
-Digital Designer & Developer
+IZZA FATIMA
+Creative Computing Graduate & Digital Creator
 
-Contact: alex@example.com | (555) 123-4567
-Portfolio: alexdesigner.com
-
-EXPERIENCE:
-- Senior UI/UX Designer at TechCorp (2022-Present)
-- Frontend Developer at CreativeStudio (2020-2022)
-- Junior Designer at DesignHub (2019-2020)
-
-SKILLS:
-- Design: Figma, Adobe Creative Suite, Sketch
-- Development: React, TypeScript, Tailwind CSS
-- Tools: Git, Framer, Principle
+Contact: izza@example.com | (555) 123-4567
+Portfolio: izzafatima.com
 
 EDUCATION:
-Bachelor of Fine Arts in Digital Design
-Creative University (2019)
+BSc Creative Computing Graduate
+
+EXPERIENCE:
+- UI/UX Design Projects
+- Web Development & Game Creation
+- Stop Motion & Video Production
+- Interactive Storytelling (Twine)
+- Mobile App Design
+
+SKILLS:
+- Design: Figma, Adobe Creative Suite, Prototyping
+- Development: Unity, HTML/CSS, JavaScript, Bitsy
+- Creative: Stop Motion, Video Editing, Interactive Media
+- Tools: Git, Creative Software, Game Development
+
+ADDITIONAL QUALIFICATIONS:
+Valid Driving License - Ready for on-site and collaborative work
     `;
 
     const blob = new Blob([resumeContent], { type: "text/plain" });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "alex-designer-resume.txt";
+    a.download = "izza-fatima-resume.txt";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -47,29 +52,31 @@ Creative University (2019)
             <div className="space-y-8 animate-fade-in">
               <div className="space-y-6">
                 <div className="flex items-center gap-3 text-pink-400">
-                  <Sparkles className="w-6 h-6" />
-                  <span className="text-lg font-medium">Digital Creator</span>
+                  <div className="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></div>
+                  <span className="text-lg font-medium">Creative Computing Graduate</span>
                 </div>
                 <h1 className="text-6xl lg:text-8xl font-black leading-tight">
-                  <span className="gradient-text">Alex</span>
+                  <span className="gradient-text">Izza</span>
                   <br />
-                  <span className="text-white">Designer</span>
+                  <span className="text-white">Fatima</span>
                 </h1>
                 <div className="w-32 h-1 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 rounded-full"></div>
               </div>
               
               <p className="text-xl text-gray-300 leading-relaxed max-w-lg">
-                Crafting magical digital experiences through thoughtful design and clean code. 
-                Passionate about bridging creativity and technology in the cosmic realm of possibilities.
+                Creative and detail-oriented digital creator with a passion for UI/UX design, 
+                web development, game and app creation. Skilled in blending aesthetic design with 
+                functional usability. Holds a valid driving license, which adds to my flexibility 
+                and readiness for on-site or collaborative work.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6">
-                <Link to="/portfolio">
+                <a href="https://www.youtube.com/@izzafatima5469" target="_blank" rel="noopener noreferrer">
                   <button className="glow-button flex items-center gap-3">
-                    <Sparkles className="w-5 h-5" />
-                    View My Universe
+                    <Youtube className="w-5 h-5" />
+                    Visit My YouTube
                   </button>
-                </Link>
+                </a>
                 
                 <button 
                   onClick={handleDownloadResume}
@@ -86,8 +93,8 @@ Creative University (2019)
               <div className="aspect-square glass-card p-8 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/20 to-blue-500/20 opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=600&fit=crop&crop=face"
-                  alt="Alex Designer"
+                  src="/lovable-uploads/0c9a8b6e-4a8e-49dd-9fc7-7b10b4d5f0cd.png"
+                  alt="Izza Fatima"
                   className="w-full h-full object-cover rounded-xl relative z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl z-20"></div>
@@ -97,10 +104,10 @@ Creative University (2019)
               <div className="absolute -bottom-8 -left-8 glass-card p-6 border border-pink-400/30 group">
                 <div className="text-sm text-pink-400 mb-1 flex items-center gap-2">
                   <div className="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></div>
-                  Currently at
+                  Status
                 </div>
-                <div className="font-bold text-white text-lg">TechCorp</div>
-                <div className="text-sm text-gray-300">Senior UI/UX Designer</div>
+                <div className="font-bold text-white text-lg">Available for Work</div>
+                <div className="text-sm text-gray-300">Creative Computing Graduate</div>
               </div>
             </div>
           </div>

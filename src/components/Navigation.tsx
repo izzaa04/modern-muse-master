@@ -15,32 +15,37 @@ const Navigation = () => {
 
   const handleDownloadResume = () => {
     const resumeContent = `
-ALEX DESIGNER
-Digital Designer & Developer
+IZZA FATIMA
+Creative Computing Graduate & Digital Creator
 
-Contact: alex@example.com | (555) 123-4567
-Portfolio: alexdesigner.com
-
-EXPERIENCE:
-- Senior UI/UX Designer at TechCorp (2022-Present)
-- Frontend Developer at CreativeStudio (2020-2022)
-- Junior Designer at DesignHub (2019-2020)
-
-SKILLS:
-- Design: Figma, Adobe Creative Suite, Sketch
-- Development: React, TypeScript, Tailwind CSS
-- Tools: Git, Framer, Principle
+Contact: izza@example.com | (555) 123-4567
+Portfolio: izzafatima.com
 
 EDUCATION:
-Bachelor of Fine Arts in Digital Design
-Creative University (2019)
+BSc Creative Computing Graduate
+
+EXPERIENCE:
+- UI/UX Design Projects
+- Web Development & Game Creation
+- Stop Motion & Video Production
+- Interactive Storytelling (Twine)
+- Mobile App Design
+
+SKILLS:
+- Design: Figma, Adobe Creative Suite, Prototyping
+- Development: Unity, HTML/CSS, JavaScript, Bitsy
+- Creative: Stop Motion, Video Editing, Interactive Media
+- Tools: Git, Creative Software, Game Development
+
+ADDITIONAL QUALIFICATIONS:
+Valid Driving License - Ready for on-site and collaborative work
     `;
 
     const blob = new Blob([resumeContent], { type: "text/plain" });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "alex-designer-resume.txt";
+    a.download = "izza-fatima-resume.txt";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -56,7 +61,7 @@ Creative University (2019)
             to="/" 
             className="text-3xl font-bold gradient-text hover:scale-110 transition-transform duration-300"
           >
-            AD
+            IF
           </Link>
 
           {/* Desktop Navigation */}
