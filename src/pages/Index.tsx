@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Download, Youtube } from "lucide-react";
 
@@ -56,7 +57,7 @@ const Index = () => {
               <div className="aspect-square glass-card p-8 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/20 to-blue-500/20 opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
                 <img
-                  src="/public/Izza.jpeg"
+                  src="/lovable-uploads/89ca2d4d-ae58-4f96-bb30-c7d9f8412f25.png"
                   alt="Izza Fatima"
                   className="w-full h-full object-cover rounded-xl relative z-10"
                 />

@@ -1,3 +1,4 @@
+
 const Certificates = () => {
   return (
     <div className="min-h-screen relative pt-32 pb-20 px-6 lg:px-8">
@@ -15,40 +16,54 @@ const Certificates = () => {
 
         {/* Certificates Gallery */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Certificate 1 */}
+          {/* Certificate 1 - Introduction to HTML */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="/public/Certificate 1.png"
-                alt="Certificate 1"
+                src="/lovable-uploads/7e442dda-e2d0-43f7-a400-e456da6e8b6b.png"
+                alt="Introduction to HTML Certificate"
                 className="object-contain h-full w-full rounded-lg"
               />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Python Course (Intermediate)</h3>
+            <h3 className="text-xl font-bold text-white mb-2">Introduction to HTML</h3>
             <p className="text-gray-300 text-sm">SoloLearn</p>
-            <p className="text-gray-400 text-xs mt-1">17 December 2023</p>
+            <p className="text-gray-400 text-xs mt-1">19 April 2023</p>
           </div>
 
-          {/* Certificate 2 */}
+          {/* Certificate 2 - The Hour of Code */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="/public/Certificate 2.png"
-                alt="Certificate 2"
+                src="/lovable-uploads/349dc831-8da9-4314-8943-785c75893ed9.png"
+                alt="The Hour of Code Certificate"
                 className="object-contain h-full w-full rounded-lg"
               />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Python Course (Foundations)</h3>
-            <p className="text-gray-300 text-sm">Linkedin Learning</p>
-            <p className="text-gray-400 text-xs mt-1">12 November 2024</p>
+            <h3 className="text-xl font-bold text-white mb-2">The Hour of Code</h3>
+            <p className="text-gray-300 text-sm">Code.org</p>
+            <p className="text-gray-400 text-xs mt-1">Computer Science Basics</p>
           </div>
 
-          {/* Certificate 3 */}
+          {/* Certificate 3 - Website Completion */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="/public/Certificate 3.png"
-                alt="Certificate 3"
+                src="/lovable-uploads/d917f927-02b0-4ff0-8a0b-d0ab44154051.png"
+                alt="Website Completion Certificate"
+                className="object-contain h-full w-full rounded-lg"
+              />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Website Completion</h3>
+            <p className="text-gray-300 text-sm">Gohr Al Gillani</p>
+            <p className="text-gray-400 text-xs mt-1">Website Development Project</p>
+          </div>
+
+          {/* Certificate 4 - Python Tkinter */}
+          <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
+            <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
+              <img
+                src="/lovable-uploads/9dd2785b-9080-4c84-97a6-6de745d38d5a.png"
+                alt="Python Tkinter Certificate"
                 className="object-contain h-full w-full rounded-lg"
               />
             </div>
@@ -57,46 +72,32 @@ const Certificates = () => {
             <p className="text-gray-400 text-xs mt-1">December 2023</p>
           </div>
 
-          {/* Certificate 4 */}
+          {/* Certificate 5 - Machine Learning with Python */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="/public/Certificate 4.jpg"
-                alt="Certificate 4"
+                src="/lovable-uploads/730d79c7-6f0c-452b-bd79-e7e7e38e31af.png"
+                alt="Machine Learning with Python Certificate"
                 className="object-contain h-full w-full rounded-lg"
               />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Website Completion</h3>
-            <p className="text-gray-300 text-sm">Gohr Al Gilani</p>
-            <p className="text-gray-400 text-xs mt-1">January 2024</p>
+            <h3 className="text-xl font-bold text-white mb-2">Machine Learning with Python: Foundations</h3>
+            <p className="text-gray-300 text-sm">LinkedIn Learning</p>
+            <p className="text-gray-400 text-xs mt-1">12 November 2024</p>
           </div>
 
-          {/* Certificate 5 */}
+          {/* Certificate 6 - Python Intermediate */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="/public/Cetificate 5.jpg"
-                alt="Certificate 5"
+                src="/lovable-uploads/3b631a2c-3731-4ac5-be99-6fed0b0aaecc.png"
+                alt="Python Intermediate Certificate"
                 className="object-contain h-full w-full rounded-lg"
               />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Hour of Code Course</h3>
-            <p className="text-gray-300 text-sm">HatchXR</p>
-            <p className="text-gray-400 text-xs mt-1">April 2024</p>
-          </div>
-
-          {/* Certificate 6 */}
-          <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
-            <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
-              <img
-                src="/public/Certificate 6.png"
-                alt="Certificate 6"
-                className="object-contain h-full w-full rounded-lg"
-              />
-            </div>
-            <h3 className="text-xl font-bold text-white mb-2">Introduction to HTML</h3>
+            <h3 className="text-xl font-bold text-white mb-2">Python Intermediate</h3>
             <p className="text-gray-300 text-sm">SoloLearn</p>
-            <p className="text-gray-400 text-xs mt-1">19 April 2023</p>
+            <p className="text-gray-400 text-xs mt-1">17 December 2023</p>
           </div>
         </div>
 
