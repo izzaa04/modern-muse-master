@@ -10,7 +10,8 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/portfolio", label: "Portfolio" }
+    { path: "/portfolio", label: "Portfolio" },
+    { path: "/certificates", label: "Certificates" }
   ];
 
   const handleDownloadResume = () => {
@@ -73,14 +74,14 @@ Valid Driving License - Ready for on-site and collaborative work
                 className={cn(
                   "text-sm font-medium transition-all duration-300 relative group",
                   location.pathname === item.path
-                    ? "text-pink-400"
+                    ? "text-purple-300"
                     : "text-gray-300 hover:text-white"
                 )}
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-300 to-pink-300 transition-all duration-300 group-hover:w-full"></span>
                 {location.pathname === item.path && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-pink-400 to-blue-400"></span>
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-300 to-pink-300"></span>
                 )}
               </Link>
             ))}
@@ -100,11 +101,11 @@ Valid Driving License - Ready for on-site and collaborative work
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
               <div className={cn(
-                "w-6 h-0.5 bg-gradient-to-r from-pink-400 to-blue-400 transition-all",
+                "w-6 h-0.5 bg-gradient-to-r from-purple-300 to-pink-300 transition-all",
                 isMenuOpen ? "rotate-45 translate-y-0.5" : ""
               )} />
               <div className={cn(
-                "w-6 h-0.5 bg-gradient-to-r from-pink-400 to-blue-400 mt-1 transition-all",
+                "w-6 h-0.5 bg-gradient-to-r from-purple-300 to-pink-300 mt-1 transition-all",
                 isMenuOpen ? "-rotate-45 -translate-y-0.5" : ""
               )} />
             </div>
@@ -123,7 +124,7 @@ Valid Driving License - Ready for on-site and collaborative work
                   className={cn(
                     "text-sm font-medium transition-colors",
                     location.pathname === item.path
-                      ? "text-pink-400"
+                      ? "text-purple-300"
                       : "text-gray-300"
                   )}
                 >

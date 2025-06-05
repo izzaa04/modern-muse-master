@@ -46,13 +46,27 @@
 @layer base {
   * {
     @apply border-border;
+    cursor: none;
   }
 
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 25%, #16213e 50%, #0f0f23 75%, #0a0a0a 100%);
-    cursor: none;
+    background: linear-gradient(135deg, #020136 0%, #240136 25%, #360123 50%, #240136 75%, #020136 100%);
     overflow-x: hidden;
+  }
+
+  /* Custom black cursor */
+  .custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: transform 0.1s ease;
   }
 
   /* Sparkle cursor effect */
@@ -60,7 +74,7 @@
     position: fixed;
     width: 20px;
     height: 20px;
-    background: radial-gradient(circle, #ff6b9d, #c471ed, #12d8fa);
+    background: radial-gradient(circle, #360123, #240136, #020136);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
@@ -88,10 +102,10 @@
     width: 100%;
     height: 100%;
     background: 
-      radial-gradient(ellipse at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 20%, rgba(255, 107, 157, 0.3) 0%, transparent 50%),
-      radial-gradient(ellipse at 40% 80%, rgba(18, 216, 250, 0.3) 0%, transparent 50%),
-      linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 25%, #16213e 50%, #0f0f23 75%, #0a0a0a 100%);
+      radial-gradient(ellipse at 20% 50%, rgba(2, 1, 54, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(54, 1, 35, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 40% 80%, rgba(36, 1, 54, 0.3) 0%, transparent 50%),
+      linear-gradient(135deg, #020136 0%, #240136 25%, #360123 50%, #240136 75%, #020136 100%);
     z-index: -2;
   }
 
@@ -103,9 +117,9 @@
     height: 100%;
     background-image: 
       radial-gradient(2px 2px at 20px 30px, #eee, transparent),
-      radial-gradient(2px 2px at 40px 70px, rgba(255, 107, 157, 0.8), transparent),
-      radial-gradient(1px 1px at 90px 40px, rgba(18, 216, 250, 0.8), transparent),
-      radial-gradient(1px 1px at 130px 80px, rgba(196, 113, 237, 0.8), transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(54, 1, 35, 0.8), transparent),
+      radial-gradient(1px 1px at 90px 40px, rgba(36, 1, 54, 0.8), transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(2, 1, 54, 0.8), transparent),
       radial-gradient(2px 2px at 160px 30px, #fff, transparent);
     background-repeat: repeat;
     background-size: 200px 100px;
@@ -128,33 +142,34 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #ff6b9d, #c471ed, #12d8fa);
+    background: linear-gradient(45deg, #360123, #240136, #020136);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #ff8fb3, #d084f0, #3ee1fb);
+    background: linear-gradient(45deg, #360000, #360123, #240136);
   }
 }
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-purple-300 via-pink-300 to-blue-300 bg-clip-text text-transparent;
   }
 
   .glass-card {
-    @apply backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl shadow-2xl;
+    @apply backdrop-blur-sm border border-white/10 rounded-2xl shadow-2xl;
+    background: rgba(2, 1, 54, 0.3);
   }
 
   .glow-button {
     @apply relative overflow-hidden rounded-full px-8 py-3 font-semibold transition-all duration-300;
-    background: linear-gradient(45deg, #ff6b9d, #c471ed, #12d8fa);
-    box-shadow: 0 0 20px rgba(255, 107, 157, 0.3);
+    background: linear-gradient(45deg, #360123, #240136, #020136);
+    box-shadow: 0 0 20px rgba(54, 1, 35, 0.3);
   }
 
   .glow-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 40px rgba(255, 107, 157, 0.4);
+    box-shadow: 0 10px 40px rgba(54, 1, 35, 0.4);
   }
 
   .glow-button::before {
