@@ -19,7 +19,7 @@ const Certificates = () => {
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="public/Certificate 1.png"
+                src="/public/Certificate 1.png"
                 alt="Certificate 1"
                 className="object-contain h-full w-full rounded-lg"
               />
@@ -33,7 +33,7 @@ const Certificates = () => {
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="public/Certificate 2.png"
+                src="/public/Certificate 2.png"
                 alt="Certificate 2"
                 className="object-contain h-full w-full rounded-lg"
               />
@@ -47,7 +47,7 @@ const Certificates = () => {
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="public/Certificate 3.png"
+                src="/public/Certificate 3.png"
                 alt="Certificate 3"
                 className="object-contain h-full w-full rounded-lg"
               />
@@ -61,7 +61,7 @@ const Certificates = () => {
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="public/Certificate 4.jpg"
+                src="/public/Certificate 4.jpg"
                 alt="Certificate 4"
                 className="object-contain h-full w-full rounded-lg"
               />
@@ -75,7 +75,7 @@ const Certificates = () => {
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="public/Cetificate 5.jpg"
+                src="/public/Cetificate 5.jpg"
                 alt="Certificate 5"
                 className="object-contain h-full w-full rounded-lg"
               />
@@ -89,7 +89,7 @@ const Certificates = () => {
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
               <img
-                src="public/Certificate 6.png"
+                src="/public/Certificate 6.png"
                 alt="Certificate 6"
                 className="object-contain h-full w-full rounded-lg"
               />
