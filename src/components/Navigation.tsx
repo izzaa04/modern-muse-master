@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -13,45 +12,6 @@ const Navigation = () => {
     { path: "/portfolio", label: "Portfolio" },
     { path: "/certificates", label: "Certificates" }
   ];
-
-  const handleDownloadResume = () => {
-    const resumeContent = `
-IZZA FATIMA
-Creative Computing Graduate & Digital Creator
-
-Contact: izza@example.com | (555) 123-4567
-Portfolio: izzafatima.com
-
-EDUCATION:
-BSc Creative Computing Graduate
-
-EXPERIENCE:
-- UI/UX Design Projects
-- Web Development & Game Creation
-- Stop Motion & Video Production
-- Interactive Storytelling (Twine)
-- Mobile App Design
-
-SKILLS:
-- Design: Figma, Adobe Creative Suite, Prototyping
-- Development: Unity, HTML/CSS, JavaScript, Bitsy
-- Creative: Stop Motion, Video Editing, Interactive Media
-- Tools: Git, Creative Software, Game Development
-
-ADDITIONAL QUALIFICATIONS:
-Valid Driving License - Ready for on-site and collaborative work
-    `;
-
-    const blob = new Blob([resumeContent], { type: "text/plain" });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "izza-fatima-resume.txt";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
-  };
 
   return (
     <nav className="fixed top-0 w-full z-50 glass-card border-0 border-b border-white/10">
@@ -85,13 +45,14 @@ Valid Driving License - Ready for on-site and collaborative work
                 )}
               </Link>
             ))}
-            <button
-              onClick={handleDownloadResume}
+            <a
+              href="/Resume.pdf"
+              download
               className="glow-button text-white flex items-center gap-2"
             >
               <Download size={16} />
               Resume
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -131,16 +92,15 @@ Valid Driving License - Ready for on-site and collaborative work
                   {item.label}
                 </Link>
               ))}
-              <button
-                onClick={() => {
-                  handleDownloadResume();
-                  setIsMenuOpen(false);
-                }}
+              <a
+                href="/Resume.pdf"
+                download
                 className="glow-button text-white flex items-center gap-2 w-fit"
+                onClick={() => setIsMenuOpen(false)}
               >
                 <Download size={16} />
                 Resume
-              </button>
+              </a>
             </div>
           </div>
         )}

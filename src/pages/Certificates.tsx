@@ -1,4 +1,3 @@
-
 const Certificates = () => {
   return (
     <div className="min-h-screen relative pt-32 pb-20 px-6 lg:px-8">
@@ -19,61 +18,85 @@ const Certificates = () => {
           {/* Certificate 1 */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-gray-400">Certificate Image 1</span>
+              <img
+                src="public/Certificate 1.png"
+                alt="Certificate 1"
+                className="object-contain h-full w-full rounded-lg"
+              />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Certificate Title</h3>
-            <p className="text-gray-300 text-sm">Issuing Organization</p>
-            <p className="text-gray-400 text-xs mt-1">Date Earned</p>
+            <h3 className="text-xl font-bold text-white mb-2">Python Course (Intermediate)</h3>
+            <p className="text-gray-300 text-sm">SoloLearn</p>
+            <p className="text-gray-400 text-xs mt-1">17 December 2023</p>
           </div>
 
           {/* Certificate 2 */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-gray-400">Certificate Image 2</span>
+              <img
+                src="public/Certificate 2.png"
+                alt="Certificate 2"
+                className="object-contain h-full w-full rounded-lg"
+              />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Certificate Title</h3>
-            <p className="text-gray-300 text-sm">Issuing Organization</p>
-            <p className="text-gray-400 text-xs mt-1">Date Earned</p>
+            <h3 className="text-xl font-bold text-white mb-2">Python Course (Foundations)</h3>
+            <p className="text-gray-300 text-sm">Linkedin Learning</p>
+            <p className="text-gray-400 text-xs mt-1">12 November 2024</p>
           </div>
 
           {/* Certificate 3 */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-gray-400">Certificate Image 3</span>
+              <img
+                src="public/Certificate 3.png"
+                alt="Certificate 3"
+                className="object-contain h-full w-full rounded-lg"
+              />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Certificate Title</h3>
-            <p className="text-gray-300 text-sm">Issuing Organization</p>
-            <p className="text-gray-400 text-xs mt-1">Date Earned</p>
+            <h3 className="text-xl font-bold text-white mb-2">Python Tkinter Course</h3>
+            <p className="text-gray-300 text-sm">Great Learning Academy</p>
+            <p className="text-gray-400 text-xs mt-1">December 2023</p>
           </div>
 
           {/* Certificate 4 */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-gray-400">Certificate Image 4</span>
+              <img
+                src="public/Certificate 4.jpg"
+                alt="Certificate 4"
+                className="object-contain h-full w-full rounded-lg"
+              />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Certificate Title</h3>
-            <p className="text-gray-300 text-sm">Issuing Organization</p>
-            <p className="text-gray-400 text-xs mt-1">Date Earned</p>
+            <h3 className="text-xl font-bold text-white mb-2">Website Completion</h3>
+            <p className="text-gray-300 text-sm">Gohr Al Gilani</p>
+            <p className="text-gray-400 text-xs mt-1">January 2024</p>
           </div>
 
           {/* Certificate 5 */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-gray-400">Certificate Image 5</span>
+              <img
+                src="public/Cetificate 5.jpg"
+                alt="Certificate 5"
+                className="object-contain h-full w-full rounded-lg"
+              />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Certificate Title</h3>
-            <p className="text-gray-300 text-sm">Issuing Organization</p>
-            <p className="text-gray-400 text-xs mt-1">Date Earned</p>
+            <h3 className="text-xl font-bold text-white mb-2">Hour of Code Course</h3>
+            <p className="text-gray-300 text-sm">HatchXR</p>
+            <p className="text-gray-400 text-xs mt-1">April 2024</p>
           </div>
 
           {/* Certificate 6 */}
           <div className="glass-card p-6 group hover:scale-105 transition-all duration-300 animate-fade-in">
             <div className="aspect-[4/3] bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-gray-400">Certificate Image 6</span>
+              <img
+                src="public/Certificate 6.png"
+                alt="Certificate 6"
+                className="object-contain h-full w-full rounded-lg"
+              />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Certificate Title</h3>
-            <p className="text-gray-300 text-sm">Issuing Organization</p>
-            <p className="text-gray-400 text-xs mt-1">Date Earned</p>
+            <h3 className="text-xl font-bold text-white mb-2">Introduction to HTML</h3>
+            <p className="text-gray-300 text-sm">SoloLearn</p>
+            <p className="text-gray-400 text-xs mt-1">19 April 2023</p>
           </div>
         </div>
 

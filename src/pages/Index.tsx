@@ -1,46 +1,8 @@
-
 import { Link } from "react-router-dom";
 import { Download, Youtube } from "lucide-react";
 
 const Index = () => {
-  const handleDownloadResume = () => {
-    const resumeContent = `
-IZZA FATIMA
-Creative Computing Graduate & Digital Creator
-
-Contact: izza@example.com | (555) 123-4567
-Portfolio: izzafatima.com
-
-EDUCATION:
-BSc Creative Computing Graduate
-
-EXPERIENCE:
-- UI/UX Design Projects
-- Web Development & Game Creation
-- Stop Motion & Video Production
-- Interactive Storytelling (Twine)
-- Mobile App Design
-
-SKILLS:
-- Design: Figma, Adobe Creative Suite, Prototyping
-- Development: Unity, HTML/CSS, JavaScript, Bitsy
-- Creative: Stop Motion, Video Editing, Interactive Media
-- Tools: Git, Creative Software, Game Development
-
-ADDITIONAL QUALIFICATIONS:
-Valid Driving License - Ready for on-site and collaborative work
-    `;
-
-    const blob = new Blob([resumeContent], { type: "text/plain" });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "izza-fatima-resume.txt";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
-  };
+ 
 
   return (
     <div className="min-h-screen relative">
@@ -78,13 +40,14 @@ Valid Driving License - Ready for on-site and collaborative work
                   </button>
                 </a>
                 
-                <button 
-                  onClick={handleDownloadResume}
+                <a
+                  href="/Resume.pdf"
+                  download
                   className="glass-card px-8 py-3 text-lg font-medium text-white hover:bg-white/10 transition-all duration-300 flex items-center gap-3 border border-white/20 hover:border-pink-400/50"
                 >
                   <Download className="w-5 h-5" />
                   Download Resume
-                </button>
+                </a>
               </div>
             </div>
 
@@ -93,7 +56,7 @@ Valid Driving License - Ready for on-site and collaborative work
               <div className="aspect-square glass-card p-8 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/20 to-blue-500/20 opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
                 <img
-                  src="/lovable-uploads/0c9a8b6e-4a8e-49dd-9fc7-7b10b4d5f0cd.png"
+                  src="public/Izza.jpeg"
                   alt="Izza Fatima"
                   className="w-full h-full object-cover rounded-xl relative z-10"
                 />
